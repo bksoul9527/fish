@@ -164,5 +164,22 @@ $window.Add_Closed({
     Save-CurrentIndex
 })
 
+# 定义背景画刷
+$transparentBrush = [System.Windows.Media.Brushes]::Transparent
+$semiTransparentBrush = [System.Windows.Media.SolidColorBrush]::new([System.Windows.Media.Color]::FromArgb(30, 255, 255, 255)) # 30 透明度的白色
+
+# 添加 MouseEnter 事件以将背景更改为半透明
+$window.Add_MouseEnter({
+    $window.Background = $semiTransparentBrush
+})
+
+# 添加 MouseLeave 事件以将背景更改回透明
+$window.Add_MouseLeave({
+    $window.Background = $transparentBrush
+})
+
+# 确保窗口开始时背景是透明的
+$window.Background = $transparentBrush
+
 # 显示窗口
 $window.ShowDialog()
