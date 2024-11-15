@@ -1,4 +1,4 @@
-本项目是基于windows的powershell写的看书工具
+本项目是基于windows的powershell写的上班摸鱼看书工具
 
 ### 运行：
 点击run.bat
