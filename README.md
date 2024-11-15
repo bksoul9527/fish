@@ -1,17 +1,18 @@
 本项目是基于windows的powershell写的看书工具
 
-运行：
+### 运行：
 点击run.bat
 
-文本：
+### 文本：
 文本只支持UTF8类型的，其他类型可能会乱码。
 如果你不会转码，可以先创建一个txt文件，然后把你要看的文本复制进去。
 
 如果重新换了一本书，要把config.json文件里的currentIndex参数设置为0，才会从第一页开始阅读。
 
 
-config.json 配置说明：
+### config.json 配置说明：
 
+~~~
 {
     "windowWidth": 400,          // 窗口的宽度，单位为像素
     "windowHeight": 60,         // 窗口的最小高度，单位为像素
@@ -25,9 +26,10 @@ config.json 配置说明：
     "toggleOpacityKey": "Up",     // 用于切换文本不透明度的键，例如 "Up" 表示字母 Up 键
     "exitKey": "Escape"          // 用于关闭窗口的键，例如 "Escape" 表示 Esc 键
 }
+~~~ 
 
 
-配置说明：
+### 配置说明：
 windowWidth 和 windowHeight: 定义窗口的初始尺寸。windowHeight 是窗口的最小高度，具体高度会根据文本内容自动调整。
 fontSize: 定义显示文本的字体大小。
 textColor: 设置文本的颜色，可以使用常见的颜色名称（如 "Black", "Red"）或使用十六进制颜色代码。
