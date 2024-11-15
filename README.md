@@ -39,3 +39,6 @@
 + previousKey 和 nextKey: 指定用于在文本部分或行之间导航的键。可以使用键的名称，如 "Left", "Right", "Up", "Down" 等。
 + toggleOpacityKey: 指定用于切换文本不透明度的键。按下该键时，文本将从完全可见切换到不可见或反之。
 + exitKey: 指定用于关闭窗口的键。
+
+
+https://www.zhihu.com/question/340253665/answer/31917871120
